@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GAIL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <!-- <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'> -->
+    <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/fontawesome-4.2.0.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/dma_styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/sweetalert2.min.css" rel="stylesheet" type="text/css" media="all">
+
+</head>
+<body>
+        <!--header-->
+
+<div class="container-fluid"  id="headerblk"><!-- header starts -->
+  <header class="row header">
+    <div class="top_bar"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 logo_bar">
+          <div class="logo admin-logo">
+            <a href="index.html"><img src="images/logo.png" alt="Gail Gas" title="Gail Gas" class="img-responsive" /></a>
+          </div>
+          
+          <div class="pull-right collapse navbar-collapse" id="main_nav">
+            <span class="garden-city">Bringing Smiles in the Garden City</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div><!-- header ends -->
+        
+ <div class="min_cont_ht defaultview">
+            <div class="banner_wrap_login adminlogin min_cont_ht">
+                <div class="layer">
+                    <div class="container">
+                        <div class="col-md-4 col-md-offset-4 col-sm-12">
+					<div class="form-container">
+				     <div class="middlePage">				
+						<div class="black-overlay" id="black-overlay"></div><!-- Login popup starts -->
+                            <div class="login-popblk" id="login-popblk" style="display:block;">
+                              <div class="login-popblk-wrapper">                                                          
+                              <div class="login-block" id="login-block"><!-- login block -->  
+                                  <p class="logintxt">Employee Login</p>
+                                  <div class="login_detail">
+                                    <div class="bp_number fL">
+                                      <p class="fL">Username</p>
+                                      <input class="form-control fR" id="bpnumberTxtbox" type="text">
+                                    </div>
+                                    <div class="bp_number fL">
+                                      <p class="fL">Password</p>
+                                      <input class="form-control fR" id="passwordTxtbox" type="password">
+                                      <span class="txtbox_content greencolor links" id="home-forgetpwd">Forgot Password?</span>
+                                    </div>
+                                    <div class="bp_number fL">
+                                      <p class="fL">Captcha</p>
+                                      <label id="captchatxt" class="CaptchaTxt ng-pristine" name="captchatxt" >6ayca</label>
+                                      <input class="form-control fR" id="passwordTxtbox" type="text">
+                                    </div>
+                                    <div class="bp_number fL">
+                                      <button type="button" class="btn btn-login guppercase whiteTxt  fR" id="mainlogin" aria-expanded="false">Login</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            
+                                
+                            
+                                <div class="password-blk" id="password-blk"><!-- Forget password block -->
+                                <span class="login-popblk-cross" id="bpnumber-popblk-cros">✖</span>
+                                  <p class="logintxt">Generate Password</p>
+                                  <p class="logintxt_cust"><em>An OTP is sent to your registered mobile number xxxxxx0185</em></p>
+                                  <div class="otp_detail">
+                                    <div class="bp_number otpblk">
+                                      <p class="fL">OTP</p>
+                                      <input class="form-control fL" id="otpTxtbox" type="text">
+                                      <button type="button" class="btn btn-default fR" aria-expanded="false">Resend OTP</button>
+                                    </div>
+                                    <div class="bp_number fL otpblk">
+                                      <button type="submit" id="changepwdSubmit" class="btn btn-otp-submit guppercase whiteTxt  fR" aria-expanded="false">Submit</button>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <div class="changepwd-block" id="changepwd-block"><!-- change password block -->  
+                                  <span class="login-popblk-cross">&#10006;</span>
+                                  <p class="logintxt">Change Password</p>
+                                  <p class="logintxt_cust changepwd_note">Note: Minimum of 8 characters and should have atleast one capital, special and numberic character.</p>
+                                  <div class="login_detail">
+                                    <div class="bp_number fL">
+                                      <p class="fL">New Password</p>
+                                      <input class="form-control fR" id="newpwdTxtbox" type="text">
+                                    </div>
+                                    <div class="bp_number fL">
+                                      <p class="fL">Confirm Password</p>
+                                      <input class="form-control fR" id="confpasswordTxtbox" type="text">
+                                    </div>
+                                    <div class="bp_number fL">
+                                      <button type="button" id="changepwdloginbtn" class="btn btn-login guppercase whiteTxt  fR" aria-expanded="false">Submit</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            
+                               
+                            
+                            
+                              </div>
+                            </div><!-- Login popup ends -->
+					</div><!--End Of middlePage-->
+				</div><!--End Of Form container-->
+			</div>
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- layer -->
+            </div>
+            <!-- banner_wrap -->
+    </div>
+
+<!--start of footer-->
+<div class="container-fluid">
+  <div class="row gail_footer marg_0"></div>
+  <div class="row site_footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">&copy; All rights reserved, GAIL Gas Limited</div>
+        <div class="col-sm-6 text-right">Developed by ROLTA India Limited</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="scripts/jquery.min.js"></script>
+<!-- <script src="scripts/bootstrap.min.js"></script> -->
+<!-- <script src="scripts/bootstrap-datepicker.min.js"></script>
+<script src="scripts/dma-main.js"></script> -->
+<script src="scripts/es6-promise.auto.min.js"></script>
+<script src="scripts/sweetalert2.js"></script>
+
+<script>
+  $('#mainlogin').click(function(){
+    swal(
+      'Warning!',
+      'You have reached your maximum number of login tries. This account has been locked for 10 minutes. Please try again later.',
+      'warning'
+    )
+  })
+  $('#knowBPnumber').click(function(){
+    $('#login-block').hide();
+    $('#bpnumber-blk').show();
+  })
+  $('.login-popblk-cross,#changepwdloginbtn').click(function(){
+    $('#login-block').show();
+    $('#bpnumber-blk,#changepwd-block,#password-blk').hide();
+  })
+  $('#home-forgetpwd').click(function(){
+    $('#login-block').hide();
+    $('#password-blk').show();
+  })
+  $('#changepwdSubmit').click(function(){
+    $('#changepwd-block').show();
+    $('#password-blk').hide();
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GAIL</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link href="styles/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/fontawesome-4.2.0.min.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/main.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/dma_styles.css" rel="stylesheet" type="text/css" media="all">
+    <link href="styles/sweetalert2.min.css" rel="stylesheet" type="text/css" media="all">
+
+</head>
+<body>
+        <!--header-->
+
+<div class="container-fluid"  id="headerblk"><!-- header starts -->
+  <header class="row header">
+    <div class="top_bar"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 logo_bar">
+          <div class="logo admin-logo">
+            <a href="index.html"><img src="images/logo.png" alt="Gail Gas" title="Gail Gas" class="img-responsive" /></a>
+          </div>
+          
+          <div class="pull-right collapse navbar-collapse" id="main_nav">
+            <span class="garden-city">Bringing Smiles in the Garden City</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+</div><!-- header ends -->
+        
+ <div class="min_cont_ht defaultview">
+            <div class="banner_wrap_login adminlogin min_cont_ht">
+                <div class="layer">
+                    <div class="container">
+                        <div class="col-md-4 col-md-offset-4 col-sm-12">
+					<div class="form-container">
+				     <div class="middlePage">				
+						<div class="black-overlay" id="black-overlay"></div><!-- Login popup starts -->
+                            <div class="login-popblk" id="login-popblk" style="display:block;">
+                              <div class="login-popblk-wrapper">                                                          
+                              
+                            
+
+                                <div class="changepwd-block" id="changepwd-block" style="display:block;"><!-- change password block -->  
+                                  <p class="logintxt">Change Password</p>
+                                  <p class="logintxt_cust changepwd_note">Note: Minimum of 8 characters and should have atleast one capital, special and numberic character.</p>
+                                  <div class="login_detail">
+                                  <div class="bp_number fL">
+                                      <p class="fL">Current Password</p>
+                                      <input class="form-control fR" id="currentpwdTxtbox" type="text">
+                                    </div>
+                                    <div class="bp_number fL">
+                                      <p class="fL">New Password</p>
+                                      <input class="form-control fR" id="newpwdTxtbox" type="text">
+                                    </div>
+                                    <div class="bp_number fL">
+                                      <p class="fL">Confirm Password</p>
+                                      <input class="form-control fR" id="confpasswordTxtbox" type="text">
+                                    </div>
+                                    <div class="bp_number fL">
+                                      <button type="button" id="changepwdloginbtn" class="btn btn-login guppercase whiteTxt  fR" aria-expanded="false">Submit</button>
+                                    </div>
+                                  </div>
+                                </div>
+                            
+                               
+                            
+                            
+                              </div>
+                            </div><!-- Login popup ends -->
+					</div><!--End Of middlePage-->
+				</div><!--End Of Form container-->
+			</div>
+                    </div>
+                    <!-- container-fluid -->
+                </div>
+                <!-- layer -->
+            </div>
+            <!-- banner_wrap -->
+    </div>
+
+<!--start of footer-->
+<div class="container-fluid">
+  <div class="row gail_footer marg_0"></div>
+  <div class="row site_footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6">&copy; All rights reserved, GAIL Gas Limited</div>
+        <div class="col-sm-6 text-right">Developed by ROLTA India Limited</div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="scripts/jquery.min.js"></script>
+<!-- <script src="scripts/bootstrap.min.js"></script> -->
+<!-- <script src="scripts/bootstrap-datepicker.min.js"></script>
+<script src="scripts/dma-main.js"></script> -->
+<script src="scripts/es6-promise.auto.min.js"></script>
+<script src="scripts/sweetalert2.js"></script>
+
+<script>
+  $('#changepwdloginbtn').click(function(){
+    swal(
+      'The new password must conform to the following rules:',
+      'Password must start with an alphabetic character<br>Password must include first name and last name<br>Password must not match or include user ID<br>Minimum of 6 characters in length<br>Must contain at least 2 alphabetic characters<br>Must contain 1 lowercase, 1 uppercase, 1 special character & 1 numeric character'
+    )
+  })
+</script>
+</body>
+</html>
